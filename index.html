@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>OFFSET</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .w3-half img {
+      margin-bottom: -6px;
+      margin-top: 16px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-half img:hover {
+      opacity: 1
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding"
+    style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>OFFSET</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a>
+      <a href="#problem" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Problem</a>
+      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>
+      <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">User Research Process</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Design</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+    <span>OFFSET</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b>OFFSET</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Showcase:</b></h1>
+      <hr style="width:50px;border:5px solid lightgreen" class="w3-round">
+    </div>
+
+    <!-- Photo grid (modal) -->
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="finalabout.JPG" style="width:100%" onclick="onClick(this)" alt="About">
+        <img src="finalprofile.JPG" style="width:100%" onclick="onClick(this)"
+          alt="Profile">
+      </div>
+
+      <div class="w3-half">
+        <img src="finalhome.JPG" style="width:100%" onclick="onClick(this)"
+          alt="Home">
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+
+    <!-- Problem -->
+    <div class="w3-container" id="problem" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-green"><b>Problem:</b></h1>
+      <hr style="width:50px;border:5px solid lightgreen" class="w3-round">
+      <p>Lack of awareness in everyday activities can result in contributions to climate change issues such as global
+        warming. According to the “Assessment of awareness regarding climate change in an urban community”, 63.3% of the
+        urban population surveyed believe lifestyle changes would be the most efficient way to combat climate change. It
+        is concluded that awareness campaigns are highly recommended. This problem is inherently important because there
+        is only one Earth along with its limited resources. As noted by the United Nations Trust Fund for Human
+        Security, the degradation of the environment further limits these resources which can worsen social tensions due
+        to the increased competition. We designed a platform that connects people to help their communities become more
+        mindful of the environment.
+        <a
+          href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3299094/">(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3299094/)</a>
+        <a
+          href="https://www.un.org/humansecurity/wp-content/uploads/2017/10/Human-Security-and-Climate-Change-Policy-Brief-1.pdf">(https://www.un.org/humansecurity/wp-content/uploads/2017/10/Human-Security-and-Climate-Change-Policy-Brief-1.pdf)</a>
+      </p>
+    </div>
+
+    <!-- Designers -->
+    <div class="w3-container" id="designers" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-green"><b>Designers:</b></h1>
+      <hr style="width:50px;border:5px solid lightgreen" class="w3-round">
+      <!-- <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p> -->
+      <p><b>Our designers are thoughtfully chosen</b>:</p>
+    </div>
+
+    <!-- The Team -->
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <!-- <img src="/w3images/team2.jpg" alt="John" style="width:100%"> -->
+          <div class="w3-container w3-center w3-padding-16">
+            <i class="bi bi-person-circle" style="font-size: 5rem;"></i>
+            <h3>Jade Simien</h3>
+            <!-- <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+          <div class="w3-container w3-center w3-padding-16">
+            <i class="bi bi-person-circle" style="font-size: 5rem;"></i>
+            <h3>Xinrong Wen</h3>
+            <!-- <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-16">
+            <i class="bi bi-person-circle" style="font-size: 5rem;"></i>
+            <h3>Ahamad Adnan</h3>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-16">
+            <i class="bi bi-person-circle" style="font-size: 5rem;"></i>
+            <h3>Robert Ruiz</h3>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <div class="w3-container w3-center w3-padding-16">
+            <i class="bi bi-person-circle" style="font-size: 5rem;"></i>
+            <h3>Wilson Wu</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Research Process -->
+    <div class="w3-container" id="packages" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-green"><b>User Research Process:</b></h1>
+      <hr style="width:50px;border:5px solid lightgreen" class="w3-round">
+      <p><i class="bi bi-diamond-fill" style="font-size: 1rem;"></i> We decided to create an online questionnaire
+        because we and many of the peers we planned to survey spent the semester remotely so it was the most logical
+        method to use for its convenience. We wanted to know the general level of awareness related to the environment
+        from our participants, so we added questions with mood scales. We knew common activities that contribute to
+        climate change so we also asked participants to select ones they frequently engaged in. We understand that many
+        of these are hard to cease, so we also wanted to ask for written answers on what participants believe could help
+        solve the greater issue.</p>
+      <p><i class="bi bi-diamond-fill" style="font-size: 1rem;"></i> While we were still iterating over the
+        questionnaire, we asked friends if they would be willing to participate in an upcoming survey. We then reached
+        out to those friends/peers with the survey link mostly through online platforms such as Discord. 12 users
+        participated in the research asynchronously with 50% being S.F. residents and all of them being college-aged
+        majoring in disciplines ranging from the humanities to STEM. 58.3% responded with a 4 when asked for their
+        familiarity with issues surrounding climate change on a scale of 1 to 5 with 1 being “not at all” and 5 being
+        “very familiar”. That same percentage applied to the same number when asked about their concern regarding global
+        warming. 100% of the individuals believed that climate change can be fought against.</p>
+      <p><i class="bi bi-diamond-fill" style="font-size: 1rem;"></i> The platform we used for our questionnaire was
+        Google Forms, which provides participant statistics for each question which was a great aid in our data
+        analysis. We analyzed the data through affinity diagramming on Miro.com. First, we put every response in groups
+        of each question on their own note to prepare for grouping ones that shared similar themes. We then grouped the
+        questions that either dealt with how the problem pertains to the participants and how they feel about solutions
+        for the problem. Within the latter, we put sticky notes related to actions received by users that can be taken
+        against the issue to be further analyzed.</p>
+      <p><i class="bi bi-diamond-fill" style="font-size: 1rem;"></i> The main findings of the data analysis were that
+        most people are very aware of global warming effects and could generally describe long-term climate effects more
+        often than a particular instance that affected them personally. The majority of participants are reliant on gas
+        and electricity but believe in moving towards renewable energy. This ties to another finding that although many
+        engage in activities that emit carbon emissions, they are in favor of limiting these and opting for
+        environmentally friendlier substitutes. Another finding is that creating more awareness through education is
+        favorable.</p>
+      <p><i class="bi bi-diamond-fill" style="font-size: 1rem;"></i>
+        In depth analysis:
+      <p style="margin-left: 10%;"><i class="bi bi-diamond"></i> Most participants have felt the effects of climate
+        change as 6 have noticed seasonal changes that differ from previous years, 5 have felt/noticed increased
+        warming, however, 2 were unable to describe any experiences. This was expected as 90.9% of users either
+        moderately or extremely care about global warming and 54% are moderately familiar with climate change.</p>
+      <p style="margin-left: 10%;"><i class="bi bi-diamond"></i> 63.6% of participants leave electronics that aren’t in
+        use plugged in however 72.8% either strongly or moderately believe in moving towards renewable energy, 50%
+        mildly believe in giving homes an energy retrofit while 16.7% and 33.3% moderately or extremely believe in this,
+        and 45.5% strongly believe it’s important to use their home HVAC less. The conclusion drawn from this was that
+        although the majority are reliant on gas/electricity, all participants believed in moving towards renewable
+        energy despite the varying levels of belief.</p>
+      <p style="margin-left: 10%;"><i class="bi bi-diamond"></i> 54.5% of participants drink from plastic water bottles,
+        45.5% opt for plastic bags, and 36.4% dispose of junk mail. 66.7% strongly believe and 33.3% moderately believe
+        in using less plastic and recycling more. 91.7% regularly eat meat but 66.7% had a level of belief in eating
+        less meat and consuming more plant-based foods. This may seem strange to gather information on, but according to
+        the United Nations, almost a quarter of greenhouse gas emissions around the world originate from agriculture,
+        with beef-producing the most emissions.<a
+          href="https://www.bbc.com/news/explainers-59232599#:~:text=Beef%20produces%20the%20most%20greenhouse,are%2050%25%20less%20than%20beef">
+          (https://www.bbc.com/news/explainers-59232599#:~:text=Beef%20produces%20the%20most%20greenhouse,are%2050%25%20less%20than%20beef.)</a>
+        Changing one’s diet that they may have followed for a lifetime is understandably difficult, so it was expected
+        to see a wider range of approval and disagreement.</p>
+      <p style="margin-left: 10%;"><i class="bi bi-diamond"></i> 72.8% either moderately or mildly believe in limiting
+        air travel and 63.5% of participants moderately believe others should consider other options for driving. 27.3%
+        frequently air travel or go on road trips. If driving cannot be avoided, 72.8% either strongly or mildly believe
+        in opting for hybrid or electric cars.</p>
+      <p style="margin-left: 10%;"><i class="bi bi-diamond"></i> 4 participants shared that what they believe could help
+        fight against climate change is making larger entities such as the government and corporations responsible for
+        the change. These ranged from passing more regulations on corporations that produce the majority of the waste to
+        donating money to credible organizations that deal with the environment. 2 responses in this grouping added that
+        larger entities would bring more positive impact than an individual ever could and that it is unfair to place
+        the sole responsibility of reversal and conservation on the consumer. Creating more awareness through education
+        was also an interesting response as well as encouraging others to make small changes but expected, as 18.2% of
+        participants were not or barely familiar with climate change.</p>
+      </p>
+      <p><i class="bi bi-diamond-fill" style="font-size: 1rem;"></i> With these findings, we aim to design a product
+        that supports the willingness demonstrated by the participants to change or limit the decisions made that impact
+        the environment. However, it is understandable that many users are not seeking an entire lifestyle change but
+        are rather asking for ways to be educated about the issue. And because some participants felt that expecting
+        individuals to take on the role of environmental conservationists burdensome, a type of social platform that
+        allows users to log their activities and the carbon footprint created from them and support each other in making
+        eco-friendlier choices is what we planned to design.</p>
+    </div>
+
+    <!-- Design -->
+    <div class="w3-container" id="contact" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-green"><b>Design:</b></h1>
+      <hr style="width:50px;border:5px solid lightgreen" class="w3-round">
+      <h2><i class="bi bi-file-binary" style="font-size: 2rem; margin-left: 10%;"></i> Initial User Interface:</h2>
+      <img src="initialdesign.JPG" style="margin-left: 20%;">
+      
+    </div>
+
+    <!-- End page content -->
+  </div>
+
+  <!-- W3.CSS Container -->
+  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <!-- <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-opacity">w3.css</a></p> -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+
+</body>
+
+</html>
