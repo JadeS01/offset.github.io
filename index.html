@@ -79,13 +79,11 @@
     <div class="w3-row-padding">
       <div class="w3-half">
         <img src="finalabout.JPG" style="width:100%" onclick="onClick(this)" alt="About">
-        <img src="finalprofile.JPG" style="width:100%" onclick="onClick(this)"
-          alt="Profile">
+        <img src="finalprofile.JPG" style="width:100%" onclick="onClick(this)" alt="Profile">
       </div>
 
       <div class="w3-half">
-        <img src="finalhome.JPG" style="width:100%" onclick="onClick(this)"
-          alt="Home">
+        <img src="finalhome.JPG" style="width:100%" onclick="onClick(this)" alt="Home">
       </div>
     </div>
 
@@ -260,9 +258,86 @@
     <div class="w3-container" id="contact" style="margin-top:75px">
       <h1 class="w3-xxxlarge w3-text-green"><b>Design:</b></h1>
       <hr style="width:50px;border:5px solid lightgreen" class="w3-round">
-      <h2><i class="bi bi-file-binary" style="font-size: 2rem; margin-left: 10%;"></i> Initial User Interface:</h2>
-      <img src="initialdesign.JPG" style="margin-left: 20%;">
-      
+      <h2><i class="bi bi-file-binary" style="font-size: 2rem; margin-left: 5%;"></i> Initial User Interface:</h2>
+      <div class="w3-container">
+        <div class="w3-half">
+          <img src="initialdesign.JPG" style="margin-left: 20%;" onclick="onClick(this)" alt="First">
+          <img src="initialdesign2.JPG" style="margin-left: 20%;" onclick="onClick(this)" alt="Second">
+        </div>
+        <div class="w3-half">
+          <p><i class="bi bi-caret-left-fill"></i>This design focused on collecting the activities logged by the users
+            and
+            their respective carbon emissions
+            emitted. Based on the trends of the activities stored, the user would start seeing suggestions for lifestyle
+            changes to offset the emissions. These suggestions would also include resources such as news articles that
+            redirect the user from the website to those pages. However, this design does not foster a community-based
+            environment and focused excessively on the calculator and logging feature. The tailoring of suggested
+            content
+            also raised concerns about the amount of user data being given to outside entities.</p>
+          <p><i class="bi bi-caret-left-fill"></i>The second design built upon the carbon calculator and activity log
+            feature and also added a news feed and threads to meet the goal of creating a social platform. The team
+            decided to move forward with this design for heuristic evaluation with the news feed being the deciding
+            factor.</p>
+        </div>
+      </div>
+      <br>
+      <h3><i class="bi bi-file-code" style="font-size: 2rem; margin-left: 5%;"></i>Iterating on the Prototype: </h3>
+      <p style="margin-left:5.5%;"><b>Heuristic Evaluation</b></p>
+      <p><i class="bi bi-diamond-fill" style="font-size: 1rem; margin-left: 6%;"></i>After selecting a digital
+        prototype, we conducted a heuristic evaluation. The main severe issues with the user interface were:</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>The UI is too overwhelming for the user
+        so separating features into their own page would be helpful. The app also lacks a name.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>It’s not user-intuitive due to the lack of labeling.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>The user should be aware that the information logged is being stored, so there should be a pop-up window asking for approval.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>While there’s a news feed, it doesn’t have much room for users to interact with one another.</p>
+      <p style="font-size: 1rem; margin-left: 6.5%;">To summarize this process, the next iteration aimed to resolve the violated Heuristics which 
+        involved user control and freedom, linguistic clarity, consistency and standards, and aesthetic 
+        integrity.
+        </p>
+      <p style="font-size: 1rem; margin-left: 6.5%;">To view the iteration, follow the link: <a href="https://www.figma.com/file/fbrE25OJSMJqVuBf4CqR4X/CSC642?node-id=65%3A857">https://www.figma.com/file/fbrE25OJSMJqVuBf4CqR4X/CSC642?node-id=65%3A857</a></p>
+      <p><i class="bi bi-diamond-fill" style="font-size: 1rem; margin-left: 6%;"></i>The evaluation is as follows: </p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>We’ve all stated that the interface overloads the user’s visual limits.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>Wilson raised the issue that many buttons do not have a logo and make the overall app lack linguistic clarity.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>Wilson has also raised that there is no app name.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>Jade raised that there is a lack of aesthetic integrity; it’s inappropriate to have a logging design on the same page as a forum design.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>Since the website is collecting user data (self-provided through the activities log), Xinrong stated there’s an issue with not having a history/log page.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>Xinrong also raised that there is a lack of error prevention as the app doesn’t ask for permission to store.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>Ahmad stated that the calculator should have some sort of icon for better predictability.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>The feed interface lacks user control/has too many human limitations.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>There doesn’t appear to be any support for undo and redo, or even an option to contribute content to the page.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>There is a lack of efficiency in navigation.</p>
+      <div class="w3-container">
+        <div class="w3-half">
+          <p style="margin-left: 12%;">Before Iteration:</p>
+          <img src="before1.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+          <img src="before2.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+          <img src="before3.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+          <img src="before4.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+        </div>
+        <div class="w3-half">
+          <p>After Iteration:</p>
+          <img src="after1.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+          <img src="after2.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+          <img src="after3.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+          <img src="after4.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+          <img src="after5.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+          <img src="after6.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+          <img src="after7.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+          <img src="after8.JPG" style="width:80%; margin-left: 12%;" onclick="onClick(this)">
+        </div>
+      </div>
+      <p><i class="bi bi-diamond-fill" style="font-size: 1rem; margin-left: 6%;"></i>Changes: </p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>Added icons and words to improve interface predictability.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>“Offset” is a proposed name for the application to suit the goal of users collaborating in offsetting their carbon footprints.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>Green is the main color.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>Added a side menu that directs the user to the calculator and activity log.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>The calculator has its own icon and pop-up notification.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>The activity log is a calendar that should display the footprint of a selected day.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>The navigation bar and side menu added.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>Applied cons to show users where to create, update and delete content.</p>
+      <p><i class="bi bi-diamond" style="font-size: 1rem; margin-left: 8%;"></i>Pop windows that can be navigated away from through “x” icons.</p>
+      <br>
+      <p style="margin-left:5.5%;"><b>Usability Testing: </b></p>
     </div>
 
     <!-- End page content -->
